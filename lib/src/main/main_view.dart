@@ -17,10 +17,6 @@ export 'package:rnd/rnd.dart';
 export 'package:sized_context/sized_context.dart';
 //
 export 'package:wonders/src/main/view/common/_common_view.dart';
-//
-export 'package:wonders/src/main/view/menu/about_dialog_content.dart';
-// menu
-export 'package:wonders/src/main/view/menu/main_menu.dart';
 // The app's many screens
 export 'package:wonders/src/main/view/screens/screens.dart';
 // illustrations

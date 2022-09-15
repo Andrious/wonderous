@@ -14,9 +14,12 @@ import 'package:wonders/src/view.dart';
 // import 'package:wonders/common_libs.dart';
 // import 'package:wonders/ui/common/utils/page_routes.dart';
 
+/// A getter for this class
 AppLogic get appLogic => AppLogic();
 
+/// The App's business logic
 class AppLogic {
+  /// Singleton pattern
   factory AppLogic() => _this ??= AppLogic._();
   AppLogic._();
   static AppLogic? _this;

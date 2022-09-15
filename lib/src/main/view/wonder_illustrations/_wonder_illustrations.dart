@@ -1,26 +1,19 @@
 // common resources
-export 'package:wonders/src/main/view/wonder_illustrations/common/_wonder_common.dart';
-
-//
+// chichen_itza_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/chichen_itza_illustration.dart';
-
-//
+// christ_redeemer_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/christ_redeemer_illustration.dart';
-
-//
+// colosseum_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/colosseum_illustration.dart';
-
-//
+// _wonder_common
+export 'package:wonders/src/main/view/wonder_illustrations/common/_wonder_common.dart';
+// great_wall_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/great_wall_illustration.dart';
-
-//
+// machu_picchu_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/machu_picchu_illustration.dart';
-
-//
+// petra_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/petra_illustration.dart';
-
-//
+// pyramids_giza_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/pyramids_giza_illustration.dart';
-
-//
+// taj_mahal_illustration
 export 'package:wonders/src/main/view/wonder_illustrations/taj_mahal_illustration.dart';

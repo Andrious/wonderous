@@ -2,9 +2,6 @@
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:flutter_native_splash/flutter_native_splash.dart';
 // import 'package:wonders/common_libs.dart';
-
-import 'package:wonders/src/view.dart';
-
 // import 'package:wonders/logic/collectibles_logic.dart';
 // import 'package:wonders/logic/locale_logic.dart';
 // import 'package:wonders/logic/met_api_logic.dart';
@@ -14,6 +11,9 @@ import 'package:wonders/src/view.dart';
 // import 'package:wonders/logic/unsplash_service.dart';
 // import 'package:wonders/logic/wallpaper_logic.dart';
 // import 'package:wonders/logic/wonders_logic.dart';
+import 'package:wonders/src/view.dart' show WondersApp, runApp;
+
+void main() => runApp(WondersApp());
 
 // void main() async {
 // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -28,8 +28,6 @@ import 'package:wonders/src/view.dart';
 // Remove splash screen when bootstrap is complete
 // FlutterNativeSplash.remove();
 // }
-
-void main() => runApp(WondersApp());
 
 // /// Creates an app using the [MaterialApp.router] constructor and the `appRouter`,
 // /// an instance of [GoRouter].

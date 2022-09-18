@@ -1,5 +1,4 @@
 //
-//
 export 'package:wonders/src/main/controller/collectibles_logic.dart';
 //
 export 'package:wonders/src/main/controller/common/_main_controller_common.dart';

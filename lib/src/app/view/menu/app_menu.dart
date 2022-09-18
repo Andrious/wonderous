@@ -12,6 +12,7 @@ import 'package:wonders/src/controller.dart'
 import 'package:wonders/src/model.dart' show WonderData;
 import 'package:wonders/src/view.dart';
 
+///
 class HomeMenu extends StatelessWidget {
   const HomeMenu({Key? key, required this.data}) : super(key: key);
   final WonderData data;

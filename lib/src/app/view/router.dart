@@ -17,8 +17,8 @@ import 'package:wonders/src/controller.dart' show appLogic;
 import 'package:wonders/src/model.dart' show WonderType;
 import 'package:wonders/src/view.dart';
 
-/// Shared paths / urls used across the app
 //ignore: avoid_classes_with_only_static_members
+/// Shared paths / urls used across the app
 class ScreenPaths {
   static String splash = '/';
   static String intro = '/welcome';
@@ -85,6 +85,7 @@ final appRouter = GoRouter(
 
 /// Custom GoRoute sub-class to make the router declaration easier to read
 class AppRoute extends GoRoute {
+  ///
   AppRoute(String path, Widget Function(GoRouterState s) builder,
       {List<GoRoute> routes = const [], this.useFade = false})
       : super(

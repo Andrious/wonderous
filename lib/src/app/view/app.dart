@@ -22,6 +22,8 @@ class WondersApp extends AppStatefulWidget {
           // Add a listener for when the locale changes
           settingsLogic.currentLocale.addListener(() {
             App.locale = Locale(settingsLogic.currentLocale.value);
+            // Calls the MaterialApp again.
+            App.setState(() {});
           });
         },
         locale: Locale(settingsLogic.currentLocale.value),

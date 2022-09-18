@@ -13,6 +13,7 @@ import 'package:wonders/src/model.dart' show WonderData;
 import 'package:wonders/src/view.dart';
 
 //ignore: avoid_classes_with_only_static_members
+///
 class UnsplashDownloadService {
   static final UnsplashService _unsplash = UnsplashService();
   static final WondersLogic _wondersLogic = WondersLogic();

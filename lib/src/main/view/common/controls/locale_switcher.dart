@@ -4,13 +4,14 @@ import 'package:wonders/src/controller.dart' show $strings, settingsLogic;
 import 'package:wonders/src/view.dart';
 
 ///
-class LocaleSwitcher extends StatelessWidget with GetItMixin {
+class LocaleSwitcher extends StatelessWidget {
+  // with GetItMixin {
   ///
-  LocaleSwitcher({Key? key}) : super(key: key);
+  const LocaleSwitcher({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-//    final locale = watchX((SettingsLogic s) => s.currentLocale);
+    //  final locale = watchX((SettingsLogic s) => s.currentLocale);
     final locale = settingsLogic.currentLocale.value;
     // Link a dependency to the App's InheritedWidget.
     App.dependOnInheritedWidget(context);

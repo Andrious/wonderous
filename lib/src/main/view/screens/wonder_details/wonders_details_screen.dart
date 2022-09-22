@@ -11,10 +11,16 @@ import 'package:wonders/src/controller.dart' show wondersLogic;
 import 'package:wonders/src/model.dart' show WonderType;
 import 'package:wonders/src/view.dart';
 
+///
 class WonderDetailsScreen extends StatefulWidget with GetItStatefulWidgetMixin {
+  ///
   WonderDetailsScreen({Key? key, required this.type, this.initialTabIndex = 0})
       : super(key: key);
+
+  ///
   final WonderType type;
+
+  ///
   final int initialTabIndex;
 
   @override

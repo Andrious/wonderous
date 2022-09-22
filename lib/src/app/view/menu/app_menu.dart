@@ -72,7 +72,7 @@ class HomeMenu extends StatelessWidget {
                 iconColor: $styles.colors.offWhite,
               ),
               const Spacer(),
-              LocaleSwitcher()
+              const LocaleSwitcher()
             ],
           ),
         ),

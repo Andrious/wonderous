@@ -7,9 +7,12 @@ import 'package:wonders/src/model.dart'
     show CollectibleData, CollectibleState, WonderType, collectiblesData;
 import 'package:wonders/src/view.dart';
 
+///
 CollectiblesLogic get collectiblesLogic => CollectiblesLogic();
 
+///
 class CollectiblesLogic with ThrottledSaveLoadMixin {
+  ///
   factory CollectiblesLogic() => _this ??= CollectiblesLogic._();
   CollectiblesLogic._();
   static CollectiblesLogic? _this;

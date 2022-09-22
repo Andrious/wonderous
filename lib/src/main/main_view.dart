@@ -18,6 +18,6 @@ export 'package:sized_context/sized_context.dart';
 //
 export 'package:wonders/src/main/view/common/_common_view.dart';
 // The app's many screens
-export 'package:wonders/src/main/view/screens/screens.dart';
+export 'package:wonders/src/main/view/screens/_screens.dart';
 // illustrations
 export 'package:wonders/src/main/view/wonder_illustrations/_wonder_illustrations.dart';

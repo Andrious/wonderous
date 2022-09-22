@@ -21,6 +21,7 @@ part 'widgets/_search_input.dart';
 /// appear as images, which the user can click on to being up the details view for more information.
 class ArtifactSearchScreen extends StatefulWidget
     with GetItStatefulWidgetMixin {
+  ///
   ArtifactSearchScreen({Key? key, required this.type}) : super(key: key);
   final WonderType type;
 

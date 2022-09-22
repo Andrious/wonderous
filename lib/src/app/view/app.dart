@@ -1,6 +1,6 @@
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import 'package:wonders/src/controller.dart' show appLogic, settingsLogic;
+import 'package:wonders/src/controller.dart';
 
 import 'package:wonders/src/view.dart';
 
@@ -19,6 +19,9 @@ class WondersApp extends AppStatefulWidget {
           return true;
         },
         inInitState: () {
+          // Collectibles
+          GetIt.I
+              .registerLazySingleton<CollectiblesLogic>(CollectiblesLogic.new);
           // Add a listener for when the locale changes
           settingsLogic.currentLocale.addListener(() {
             App.locale = Locale(settingsLogic.currentLocale.value);
@@ -41,6 +44,7 @@ class WondersApp extends AppStatefulWidget {
         supportedLocales: AppLocalizations.supportedLocales,
       );
 
+  /// An alternate approach would be to have the State object as a separate class
   // @override
   // AppState createAppState() => WondersAppState();
 }

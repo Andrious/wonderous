@@ -21,7 +21,9 @@ import 'package:wonders/src/view.dart';
 part '_vertical_swipe_controller.dart';
 part 'widgets/_animated_arrow_button.dart';
 
+///
 class HomeScreen extends StatefulWidget with GetItStatefulWidgetMixin {
+  ///
   HomeScreen({Key? key}) : super(key: key);
 
   @override

@@ -5,7 +5,10 @@ import 'package:wonders/src/view.dart';
 
 ///
 class WondersAppScaffold extends StatelessWidget with GetItMixin {
+  ///
   WondersAppScaffold({Key? key, required this.child}) : super(key: key);
+
+  ///
   final Widget child;
 
   @override

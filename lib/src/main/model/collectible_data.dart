@@ -4,13 +4,16 @@ import 'package:wonders/src/controller.dart' show wondersLogic;
 import 'package:wonders/src/model.dart';
 import 'package:wonders/src/view.dart';
 
+///
 class CollectibleState {
   static const int lost = 0;
   static const int discovered = 1;
   static const int explored = 2;
 }
 
+///
 class CollectibleData {
+  ///
   CollectibleData({
     required this.title,
     required this.imageUrl,

@@ -18,9 +18,12 @@ part 'widgets/_newly_discovered_row.dart';
 part 'widgets/_collection_list.dart';
 part 'widgets/_collection_footer.dart';
 
+///
 class CollectionScreen extends StatefulWidget with GetItStatefulWidgetMixin {
+  ///
   CollectionScreen({required this.fromId, Key? key}) : super(key: key);
 
+  ///
   final String fromId;
 
   @override
@@ -73,9 +76,12 @@ class _CollectionScreenState extends State<CollectionScreen>
 
   @override
   Widget build(BuildContext context) {
-//    _states = watchX((CollectiblesLogic o) => o.statesById);
-    _states = collectiblesLogic.statesById.value;
-    int discovered = 0, explored = 0, total = collectiblesLogic.all.length;
+    _states = watchX((CollectiblesLogic o) {
+      return o.statesById;
+    });
+    int discovered = 0;
+    int explored = 0;
+    final int total = collectiblesLogic.all.length;
     _states.forEach((_, state) {
       if (state == CollectibleState.discovered) {
         discovered++;

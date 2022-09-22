@@ -1,6 +1,7 @@
 
-## 2.3.0
+## 2.3.0+01
 - App.dependOnInheritedWidget(context); Link a dependency to the App's InheritedWidget.
+- Reintroduced get_it package
 
 ## 2.2.0
 - Further organizing files and folders 

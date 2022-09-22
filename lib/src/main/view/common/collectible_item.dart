@@ -9,17 +9,22 @@ import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
 import 'package:wonders/src/view.dart';
 
+///
 class CollectibleItem extends StatelessWidget with GetItMixin {
+  ///
   CollectibleItem(this.collectible, {this.size = 64.0, Key? key})
       : super(key: key) {
     // pre-fetch the image, so it's ready if we show the collectible found screen.
     _imageProvider = NetworkImage(collectible.imageUrlSmall);
     _imageProvider
-        .resolve(ImageConfiguration())
+        .resolve(const ImageConfiguration())
         .addListener(ImageStreamListener((_, __) {}));
   }
 
+  ///
   final CollectibleData collectible;
+
+  ///
   final double size;
   late final ImageProvider _imageProvider;
 
@@ -36,8 +41,9 @@ class CollectibleItem extends StatelessWidget with GetItMixin {
 
   @override
   Widget build(BuildContext context) {
-//    final states = watchX((CollectiblesLogic c) => c.statesById);
-    final states = collectiblesLogic.statesById.value;
+    final states = watchX((CollectiblesLogic c) {
+      return c.statesById;
+    });
     final bool isLost = states[collectible.id] == CollectibleState.lost;
     // Use an OpeningCard to let the collectible smoothly collapse its size once it has been found
     return SizedBox(

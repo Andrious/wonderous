@@ -101,8 +101,8 @@ ios/
 linux/
 
 # macro related
-macros/
-macos/
+!macros/
+!macos/
 
 # Web related
 web/

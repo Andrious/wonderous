@@ -4,10 +4,12 @@ import 'package:flutter/foundation.dart';
 
 import 'package:wonders/src/controller.dart' show JsonPrefsFile, Throttler;
 
+///
 mixin ThrottledSaveLoadMixin {
   late final _file = JsonPrefsFile(fileName);
   final _throttle = Throttler(const Duration(seconds: 2));
 
+  ///
   Future<void> load() async {
     final results = await _file.load();
     try {

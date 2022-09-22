@@ -5,25 +5,33 @@ import 'dart:async';
 import 'package:wonders/src/model.dart' show WonderType;
 import 'package:wonders/src/view.dart';
 
-// Shows a set of clouds that animated onto stage.
-// When value-key is changed, a new set of clouds will animate into place and the old ones will animate out.
-// Uses a random seed system, to make sure we get the same set of clouds for each wonder, without actually having to hand-position them.
+/// Shows a set of clouds that animated onto stage.
+/// When value-key is changed, a new set of clouds will animate into place and the old ones will animate out.
+/// Uses a random seed system, to make sure we get the same set of clouds for each wonder, without actually having to hand-position them.
 class AnimatedClouds extends StatefulWidget with GetItStatefulWidgetMixin {
+  ///
   AnimatedClouds(
       {Key? key,
       this.enableAnimations = true,
       required this.wonderType,
       required this.opacity})
       : super(key: key);
+
+  ///
   final WonderType wonderType;
+
+  ///
   final bool enableAnimations;
+
+  ///
   final double opacity;
   @override
   State<AnimatedClouds> createState() => _AnimatedCloudsState();
 }
 
 class _AnimatedCloudsState extends State<AnimatedClouds>
-    with SingleTickerProviderStateMixin, GetItStateMixin {
+    with SingleTickerProviderStateMixin {
+  //, GetItStateMixin {
   late List<_Cloud> _clouds = [];
   List<_Cloud> _oldClouds = [];
   late final AnimationController _anim =

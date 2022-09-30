@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/great_wall_search_data.dart';
 
+///
 class GreatWallData extends WonderData {
+  ///
   GreatWallData()
       : super(
           searchData: _searchData, // included as a part from ./search/

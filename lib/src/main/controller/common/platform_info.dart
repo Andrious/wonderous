@@ -6,6 +6,7 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 
 import 'package:wonders/src/view.dart';
 
+// ignore: avoid_classes_with_only_static_members
 class PlatformInfo {
   static const _desktopPlatforms = [
     TargetPlatform.macOS,

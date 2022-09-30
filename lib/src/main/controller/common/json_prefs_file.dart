@@ -6,6 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 class JsonPrefsFile {
   ///
   JsonPrefsFile(this.name);
+
+  ///
   final String name;
 
   ///
@@ -15,6 +17,7 @@ class JsonPrefsFile {
     return Map<String, dynamic>.from(jsonDecode(p ?? '{}'));
   }
 
+  ///
   Future<void> save(Map<String, dynamic> data) async {
     //print('saving $data');
     await (await SharedPreferences.getInstance())

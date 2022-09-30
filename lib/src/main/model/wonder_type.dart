@@ -1,3 +1,4 @@
+///
 enum WonderType {
   chichenItza,
   christRedeemer,

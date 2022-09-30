@@ -10,15 +10,19 @@ import 'package:wonders/src/controller.dart'
     show $strings, MetAPIService, ServiceResult, StringUtils, metAPIService;
 import 'package:wonders/src/model.dart' show ArtifactData;
 
+///
 MetAPILogic get metAPILogic => MetAPILogic();
 
+///
 class MetAPILogic {
+  ///
   factory MetAPILogic() => _this ??= MetAPILogic._();
   MetAPILogic._();
   static MetAPILogic? _this;
 
   final HashMap<String, ArtifactData?> _artifactCache = HashMap();
 
+  ///
   MetAPIService get service => metAPIService; // GetIt.I.get<MetAPIService>();
 
   /// Returns artifact data by ID. Returns null if artifact cannot be found. */

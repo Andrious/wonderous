@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/machu_picchu_search_data.dart';
 
+///
 class MachuPicchuData extends WonderData {
+  ///
   MachuPicchuData()
       : super(
           searchData: _searchData, // included as a part from ./search/

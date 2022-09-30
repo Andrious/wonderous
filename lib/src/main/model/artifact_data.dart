@@ -1,4 +1,6 @@
+///
 class ArtifactData {
+  ///
   ArtifactData({
     required this.objectId,
     required this.title,
@@ -14,7 +16,8 @@ class ArtifactData {
     required this.objectBeginYear,
     required this.objectEndYear,
   });
-  final String objectId; // Artifact ID, used to identify through MET server calls.
+  final String
+      objectId; // Artifact ID, used to identify through MET server calls.
   final String title; // Artifact title / name
   final String image; // Artifact primary image URL (can have multiple)
   final int objectBeginYear; // Artifact creation year start.

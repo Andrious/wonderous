@@ -2,13 +2,17 @@
 
 import 'package:wonders/src/controller.dart' show $strings;
 
+///
 class TimelineEvent {
+  ///
   TimelineEvent(this.year, this.description);
   final int year;
   final String description;
 }
 
+///
 class GlobalEventsData {
+  ///
   final globalEvents = [
     TimelineEvent(-2900, $strings.timelineEvent2900bce),
     TimelineEvent(-2700, $strings.timelineEvent2700bce),

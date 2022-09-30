@@ -14,9 +14,13 @@ import 'package:wonders/src/view.dart';
 part 'widgets/_header.dart';
 part 'widgets/_content.dart';
 
+///
 class ArtifactDetailsScreen extends StatefulWidget {
+  ///
   const ArtifactDetailsScreen({Key? key, required this.artifactId})
       : super(key: key);
+
+  ///
   final String artifactId;
 
   @override
@@ -77,7 +81,6 @@ class _ArtifactDetailsScreenState extends State<ArtifactDetailsScreen> {
               ],
             );
           }
-
           return Stack(children: [
             content,
             const BackBtn().safe(),

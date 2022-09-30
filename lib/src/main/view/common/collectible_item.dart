@@ -31,7 +31,7 @@ class CollectibleItem extends StatelessWidget with GetItMixin {
   Future<void> _handleTap(BuildContext context) async {
     final screen = CollectibleFoundScreen(
         collectible: collectible, imageProvider: _imageProvider);
-    await appLogic.showFullscreenDialogRoute(context, screen);
+    await appLogic.showFullscreenDialogRoute<void>(context, screen);
     await AppHaptics.mediumImpact();
 
     // wait to update the state, to ensure the hero works properly:

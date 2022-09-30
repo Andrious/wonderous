@@ -10,14 +10,20 @@ import 'package:flutter/rendering.dart';
 // import 'package:wonders/ui/wonder_illustrations/common/wonder_illustration.dart';
 // import 'package:wonders/ui/wonder_illustrations/common/wonder_illustration_config.dart';
 // import 'package:wonders/ui/wonder_illustrations/common/wonder_title_text.dart';
-
+//
 import 'package:wonders/src/controller.dart'
     show $strings, wallpaperLogic, wondersLogic;
+//
 import 'package:wonders/src/model.dart' show WonderData, WonderType;
+//
 import 'package:wonders/src/view.dart';
 
+///
 class WallpaperPhotoScreen extends StatefulWidget {
+  ///
   const WallpaperPhotoScreen({Key? key, required this.type}) : super(key: key);
+
+  ///
   final WonderType type;
 
   @override

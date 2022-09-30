@@ -4,7 +4,9 @@ import 'package:equatable/equatable.dart';
 
 import 'package:wonders/src/model.dart';
 
+///
 class WonderData extends Equatable {
+  ///
   const WonderData({
     required this.type,
     required this.title,

@@ -42,6 +42,7 @@ class WondersLogic {
   ///
   final int timelineEndYear = 2200;
 
+  ///
   WonderData getData(WonderType value) {
     final WonderData? result = all.firstWhereOrNull((w) => w.type == value);
     if (result == null) {
@@ -50,6 +51,7 @@ class WondersLogic {
     return result;
   }
 
+  ///
   void init() {
     all = [
       GreatWallData(),

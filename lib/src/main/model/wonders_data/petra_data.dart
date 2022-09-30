@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/petra_search_data.dart';
 
+///
 class PetraData extends WonderData {
+  ///
   PetraData()
       : super(
           searchData: _searchData, // included as a part from ./search/

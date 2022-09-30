@@ -1,3 +1,7 @@
+
+/// framework
+export 'package:fluttery_framework/controller.dart';
+
 /// The app-wider logic and event handler
 export 'package:wonders/src/app/app_controller.dart';
 

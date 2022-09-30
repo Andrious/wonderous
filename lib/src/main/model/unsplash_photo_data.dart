@@ -3,9 +3,12 @@
 
 import 'package:wonders/src/controller.dart' show PlatformInfo;
 
+///
 enum UnsplashPhotoSize { med, large, xl }
 
+///
 class UnsplashPhotoData {
+  ///
   UnsplashPhotoData({
     required this.id,
     required this.url,

@@ -1,30 +1,67 @@
 // import 'package:wonders/common_libs.dart';
 
-import 'package:wonders/src/controller.dart' show $strings, settingsLogic;
+import 'package:wonders/src/controller.dart'
+    show $strings, StateListener, SettingsLogic;
 import 'package:wonders/src/view.dart';
 
 ///
-class LocaleSwitcher extends StatelessWidget {
-  // with GetItMixin {
+class LocaleSwitcher extends StatefulWidget {
   ///
   const LocaleSwitcher({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    //  final locale = watchX((SettingsLogic s) => s.currentLocale);
-    final locale = settingsLogic.currentLocale.value;
-    // Link a dependency to the App's InheritedWidget.
-    App.dependOnInheritedWidget(context);
-    // Function defined in a function?? Never seen that before.
-    Future<void> handleSwapLocale() async {
-      final newLocale = Locale(locale == 'en' ? 'zh' : 'en');
-      await settingsLogic.setLocale(newLocale);
-    }
+  State<StatefulWidget> createState() => _LocaleSwitcherState();
+}
 
+// class _LocaleSwitcherState extends StateX<LocaleSwitcher> {
+//   /// Pass to constructor, so the controller can call the setState() function.
+//   _LocaleSwitcherState() : super(SettingsLogic()) {
+//     con = controller! as SettingsLogic;
+//   }
+//   late SettingsLogic con;
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return AppBtn.from(
+//         padding: EdgeInsets.symmetric(
+//             vertical: $styles.insets.sm, horizontal: $styles.insets.sm),
+//         text: $strings.localeSwapButton,
+//         onPressed: con.onPressed);
+//   }
+// }
+
+class _LocaleSwitcherState extends StateX<LocaleSwitcher> {
+  /// Pass to constructor, so the controller can call the setState() function.
+  _LocaleSwitcherState() : super(SettingsLogic());
+
+  @override
+  void initState() {
+    con = SettingsLogic();
+    super.initState();
+  }
+
+  late SettingsLogic con;
+
+  @override
+  Widget build(BuildContext context) {
     return AppBtn.from(
         padding: EdgeInsets.symmetric(
             vertical: $styles.insets.sm, horizontal: $styles.insets.sm),
         text: $strings.localeSwapButton,
-        onPressed: handleSwapLocale);
+        onPressed: con.onPressed);
   }
 }
+
+// class _LocaleSwitcherState extends StateX<LocaleSwitcher> {
+//   /// Pass to constructor, so the controller can call the setState() function.
+//   _LocaleSwitcherState() : super(SettingsLogic());
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return AppBtn.from(
+//         padding: EdgeInsets.symmetric(
+//             vertical: $styles.insets.sm, horizontal: $styles.insets.sm),
+//         text: $strings.localeSwapButton,
+//         onPressed: SettingsLogic().onPressed);
+//   }
+// }

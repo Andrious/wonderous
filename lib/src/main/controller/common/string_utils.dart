@@ -3,6 +3,7 @@
 import 'package:wonders/src/controller.dart' show $strings;
 import 'package:wonders/src/view.dart';
 
+// ignore: avoid_classes_with_only_static_members
 class StringUtils {
   static bool isEmpty(String? s) {
     return s == null || s.trim().isEmpty;

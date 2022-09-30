@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/taj_mahal_search_data.dart';
 
+///
 class TajMahalData extends WonderData {
+  ///
   TajMahalData()
       : super(
           searchData: _searchData, // included as a part from ./search/

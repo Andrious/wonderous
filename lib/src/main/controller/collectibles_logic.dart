@@ -26,13 +26,16 @@ class CollectiblesLogic with ThrottledSaveLoadMixin {
   /// Current state for each collectible
   final statesById = ValueNotifier<Map<String, int>>({});
 
+  ///
   CollectibleData? fromId(String? id) =>
       id == null ? null : all.firstWhereOrNull((o) => o.id == id);
 
+  ///
   List<CollectibleData> forWonder(WonderType wonder) {
     return all.where((o) => o.wonder == wonder).toList(growable: false);
   }
 
+  ///
   void updateState(String id, int state) {
     final Map<String, int> states = Map.of(statesById.value);
     states[id] = state;
@@ -40,6 +43,7 @@ class CollectiblesLogic with ThrottledSaveLoadMixin {
     scheduleSave();
   }
 
+  ///
   bool isLost(WonderType wonderType, int i) {
     final datas = forWonder(wonderType);
     final states = statesById.value;
@@ -49,6 +53,7 @@ class CollectiblesLogic with ThrottledSaveLoadMixin {
     return true;
   }
 
+  ///
   void reset() {
     final Map<String, int> states = {};
     for (int i = 0; i < all.length; i++) {

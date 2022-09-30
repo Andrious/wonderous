@@ -18,6 +18,7 @@ enum MethodType { get, post, put, patch, delete, head }
 
 typedef HttpRequest = Future<http.Response> Function();
 
+// ignore: avoid_classes_with_only_static_members
 class HttpClient {
   static Future<HttpResponse> get(String url,
       {Map<String, String>? headers}) async {
@@ -56,19 +57,9 @@ class HttpClient {
   }
 }
 
+///
 class HttpResponse {
-  final http.Response? raw;
-
-  NetErrorType? errorType;
-
-  bool get success => errorType == NetErrorType.none;
-
-  String? get body => raw?.body;
-
-  Map<String, String>? get headers => raw?.headers;
-
-  int get statusCode => raw?.statusCode ?? -1;
-
+  ///
   HttpResponse(this.raw) {
     //No response at all, there must have been a connection error
     if (raw == null) {
@@ -81,16 +72,23 @@ class HttpResponse {
       errorType = NetErrorType.denied;
     }
   }
+
+  final http.Response? raw;
+
+  NetErrorType? errorType;
+
+  bool get success => errorType == NetErrorType.none;
+
+  String? get body => raw?.body;
+
+  Map<String, String>? get headers => raw?.headers;
+
+  int get statusCode => raw?.statusCode ?? -1;
 }
 
+///
 class ServiceResult<R> {
-  final HttpResponse response;
-
-  R? content;
-
-  bool get parseError => content == null;
-  bool get success => response.success && !parseError;
-
+  ///
   ServiceResult(this.response, R Function(Map<String, dynamic>) parser) {
     if (StringUtils.isNotEmpty(response.body) && response.success) {
       try {
@@ -100,4 +98,11 @@ class ServiceResult<R> {
       }
     }
   }
+
+  final HttpResponse response;
+
+  R? content;
+
+  bool get parseError => content == null;
+  bool get success => response.success && !parseError;
 }

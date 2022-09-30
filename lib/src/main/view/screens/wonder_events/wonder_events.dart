@@ -18,11 +18,15 @@ import 'package:wonders/src/view.dart';
 part 'widgets/_events_list.dart';
 part 'widgets/_top_content.dart';
 
+///
 class WonderEvents extends StatelessWidget {
-  static const double _topHeight = 450;
+  ///
   WonderEvents({Key? key, required this.type}) : super(key: key);
+
+  ///
   final WonderType type;
   late final _data = wondersLogic.getData(type);
+  static const double _topHeight = 450;
 
   @override
   Widget build(BuildContext context) {

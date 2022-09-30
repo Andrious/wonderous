@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/christ_redeemer_search_data.dart';
 
+///
 class ChristRedeemerData extends WonderData {
+  ///
   ChristRedeemerData()
       : super(
           searchData: _searchData, // included as a part from ./search/

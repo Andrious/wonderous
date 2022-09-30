@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/colosseum_search_data.dart';
 
+///
 class ColosseumData extends WonderData {
+  ///
   ColosseumData()
       : super(
           searchData: _searchData, // included as a part from ./search/

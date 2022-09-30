@@ -7,13 +7,17 @@ import 'package:wonders/src/model.dart' show UnsplashPhotoData;
 String unsplashAccessKey = 'dxqHsX7IOURA5hfh0fuhL-cuX6q2-5DqghC77mnmrAU';
 String unsplashSecretKey = 'yTDPsxt6soBmcym7shd24t4vlYYDcOnzWyJ07O3UyEY';
 
+///
 UnsplashService get unsplashService => UnsplashService();
 
+///
 class UnsplashService {
+  ///
   factory UnsplashService() => _this ??= UnsplashService._();
   UnsplashService._();
   static UnsplashService? _this;
 
+  ///
   final client = UnsplashClient(
     settings: ClientSettings(
       credentials: AppCredentials(
@@ -23,14 +27,18 @@ class UnsplashService {
     ),
   );
 
+  ///
   Future<List<String>?> loadCollectionPhotos(String id) async {
     final photo =
         await client.collections.photos(id, page: 1, perPage: 25).go();
     final data = photo.data;
-    if (data == null) return null;
+    if (data == null) {
+      return null;
+    }
     return data.map((e) => e.id).toList();
   }
 
+  ///
   Future<UnsplashPhotoData?> loadInfo(String id) async {
     final photo = await client.photos.get(id).go();
     final data = photo.data;

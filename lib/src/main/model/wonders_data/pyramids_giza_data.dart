@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/pyramids_giza_search_data.dart';
 
+///
 class PyramidsGizaData extends WonderData {
+  ///
   PyramidsGizaData()
       : super(
           searchData: _searchData, // included as a part from ./search/

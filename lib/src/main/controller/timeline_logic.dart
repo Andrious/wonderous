@@ -6,15 +6,20 @@ import 'package:wonders/src/controller.dart'
     show $strings, StringUtils, wondersLogic;
 import 'package:wonders/src/model.dart' show GlobalEventsData, TimelineEvent;
 
+///
 TimelineLogic get timelineLogic => TimelineLogic();
 
+///
 class TimelineLogic {
+  ///
   factory TimelineLogic() => _this ??= TimelineLogic._();
   TimelineLogic._();
   static TimelineLogic? _this;
 
+  ///
   List<TimelineEvent> events = [];
 
+  ///
   void init() {
     events = [
       ...GlobalEventsData().globalEvents,

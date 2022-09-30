@@ -2,13 +2,18 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+///
 class Throttler {
+  ///
   Throttler(this.interval);
+
+  ///
   final Duration interval;
 
   VoidCallback? _action;
   Timer? _timer;
 
+  ///
   void call(VoidCallback action, {bool immediateCall = true}) {
     // Let the latest action override whatever was there before
     _action = action;
@@ -28,6 +33,7 @@ class Throttler {
     _timer = null;
   }
 
+  ///
   void reset() {
     _action = null;
     _timer = null;

@@ -1,4 +1,8 @@
 
+## 2.4.0
+- A little more formatting
+- Add test folder
+
 ## 2.3.0+01
 - App.dependOnInheritedWidget(context); Link a dependency to the App's InheritedWidget.
 - Reintroduced get_it package

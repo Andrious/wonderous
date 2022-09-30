@@ -19,7 +19,9 @@ import 'package:wonders/src/view.dart';
 
 part 'widgets/_animated_cutout_overlay.dart';
 
+///
 class PhotoGallery extends StatefulWidget {
+  ///
   const PhotoGallery(
       {Key? key,
       this.imageSize,

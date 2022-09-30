@@ -5,9 +5,12 @@ import 'package:wonders/src/controller.dart'
     show HttpClient, HttpResponse, ServiceResult;
 import 'package:wonders/src/model.dart' show ArtifactData;
 
+///
 MetAPIService get metAPIService => MetAPIService();
 
+///
 class MetAPIService {
+  ///
   factory MetAPIService() => _this ??= MetAPIService._();
   MetAPIService._();
   static MetAPIService? _this;
@@ -15,6 +18,7 @@ class MetAPIService {
   final String _baseMETUrl =
       'https://collectionapi.metmuseum.org/public/collection/v1';
 
+  ///
   Future<ServiceResult<ArtifactData?>> getObjectByID(String id) async {
     final HttpResponse? response =
         await HttpClient.send('$_baseMETUrl/objects/$id');

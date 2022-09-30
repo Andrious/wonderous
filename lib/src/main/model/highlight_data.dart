@@ -4,7 +4,9 @@ import 'package:wonders/src/controller.dart' show wondersLogic;
 import 'package:wonders/src/model.dart' show WonderType;
 import 'package:wonders/src/view.dart';
 
+///
 class HighlightData {
+  ///
   HighlightData({
     required this.title,
     required this.imageUrl,

@@ -7,7 +7,9 @@ import 'package:wonders/src/model.dart';
 
 part 'search/chichen_itza_search_data.dart';
 
+///
 class ChichenItzaData extends WonderData {
+  ///
   ChichenItzaData()
       : super(
           searchData: _searchData, // included as a part from ./search/

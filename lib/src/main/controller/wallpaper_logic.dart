@@ -15,9 +15,12 @@ import 'package:wonders/src/controller.dart'
     show $strings, PlatformInfo, WallPaperLogic, wallpaperLogic;
 import 'package:wonders/src/view.dart';
 
+///
 WallPaperLogic get wallpaperLogic => WallPaperLogic();
 
+///
 class WallPaperLogic {
+  ///
   factory WallPaperLogic() => _this ??= WallPaperLogic._();
   WallPaperLogic._();
   static WallPaperLogic? _this;
@@ -50,6 +53,7 @@ class WallPaperLogic {
     }
   }
 
+  ///
   Future<void> share(BuildContext context, RenderRepaintBoundary boundary,
       {required String name, String wonderName = 'Wonderous'}) async {
     final Uint8List? pngBytes = await _getPngFromBoundary(boundary);

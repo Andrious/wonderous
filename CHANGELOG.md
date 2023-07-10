@@ -1,5 +1,5 @@
 
-## 2.5.0+1
+## 2.5.0+2
 - Flutter upgrade
 - Update README.md file
 

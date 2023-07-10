@@ -32,7 +32,7 @@ class LocaleSwitcher extends StatefulWidget {
 
 class _LocaleSwitcherState extends StateX<LocaleSwitcher> {
   /// Pass to constructor, so the controller can call the setState() function.
-  _LocaleSwitcherState() : super(SettingsLogic());
+  _LocaleSwitcherState() : super(controller: SettingsLogic());
 
   @override
   void initState() {
@@ -43,13 +43,16 @@ class _LocaleSwitcherState extends StateX<LocaleSwitcher> {
   late SettingsLogic con;
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildAndroid(BuildContext context) {
     return AppBtn.from(
         padding: EdgeInsets.symmetric(
             vertical: $styles.insets.sm, horizontal: $styles.insets.sm),
         text: $strings.localeSwapButton,
         onPressed: con.onPressed);
   }
+
+  @override
+  Widget buildiOS(BuildContext context) => buildAndroid(context);
 }
 
 // class _LocaleSwitcherState extends StateX<LocaleSwitcher> {

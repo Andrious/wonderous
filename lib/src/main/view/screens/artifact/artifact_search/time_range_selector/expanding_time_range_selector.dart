@@ -9,7 +9,7 @@
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 // Expandable timerange selector component that further refines Artifact Search based on date range.
 class ExpandingTimeRangeSelector extends StatefulWidget {

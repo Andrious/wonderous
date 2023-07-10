@@ -11,7 +11,7 @@ import 'dart:async';
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_collection_tile.dart';
 part 'widgets/_newly_discovered_row.dart';

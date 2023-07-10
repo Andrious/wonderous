@@ -26,8 +26,8 @@ class TimelineLogic {
       ...wondersLogic.all.map(
         (w) => TimelineEvent(
           w.startYr,
-          StringUtils.supplant(
-              $strings.timelineLabelConstruction, {'{title}': w.title}),
+          StringUtils.supplant($strings.timelineLabelConstruction('{title}'),
+              {'{title}': w.title}),
         ),
       )
     ];

@@ -16,7 +16,7 @@ import 'dart:ui';
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_bottom_scrubber.dart';
 part 'widgets/_dashed_divider_with_year.dart';

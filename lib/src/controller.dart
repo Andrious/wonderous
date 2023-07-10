@@ -1,6 +1,5 @@
-
 /// framework
-export 'package:fluttery_framework/controller.dart';
+export 'package:fluttery_framework/controller.dart' hide ModalBottomSheetRoute;
 
 /// The app-wider logic and event handler
 export 'package:wonders/src/app/app_controller.dart';

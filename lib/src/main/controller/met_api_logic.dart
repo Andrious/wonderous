@@ -33,7 +33,8 @@ class MetAPILogic {
     final ServiceResult<ArtifactData?> result = await service.getObjectByID(id);
     if (!result.success) {
       throw StringUtils.supplant(
-          $strings.artifactDetailsErrorNotFound, {'{artifactId}': id});
+          $strings.artifactDetailsErrorNotFound('{artifactId}'),
+          {'{artifactId}': id});
     }
     final ArtifactData? artifact = result.content;
     return _artifactCache[id] = artifact;

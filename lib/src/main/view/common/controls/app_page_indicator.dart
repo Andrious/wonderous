@@ -3,9 +3,11 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 // import 'package:wonders/logic/common/string_utils.dart';
 
 import 'package:wonders/src/controller.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
+///
 class AppPageIndicator extends StatefulWidget {
+  ///
   AppPageIndicator(
       {Key? key,
       required this.count,
@@ -54,11 +56,14 @@ class _AppPageIndicatorState extends State<AppPageIndicator> {
               return Semantics(
                   container: true,
                   liveRegion: true,
-                  label: StringUtils.supplant($strings.appPageSemanticSwipe, {
-                    '{pageTitle}': widget.semanticPageTitle,
-                    '{count}': (value % (widget.count) + 1).toString(),
-                    '{total}': widget.count.toString(),
-                  }),
+                  label: StringUtils.supplant(
+                      $strings.appPageSemanticSwipe(
+                          '{pageTitle}', '{count}', '{total}'),
+                      {
+                        '{pageTitle}': widget.semanticPageTitle,
+                        '{count}': (value % (widget.count) + 1).toString(),
+                        '{total}': widget.count.toString(),
+                      }),
                   child: Container());
             }),
       ),

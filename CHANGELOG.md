@@ -1,4 +1,7 @@
 
+## 2.5.0
+- Flutter upgrade
+
 ## 2.4.0
 - A little more formatting
 - Add test folder

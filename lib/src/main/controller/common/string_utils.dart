@@ -59,7 +59,7 @@ class StringUtils {
       yr = 1;
     }
     return supplant(
-      $strings.yearFormat,
+      $strings.yearFormat('{date}', '{era}'),
       {
         '{date}': yr.abs().toString(),
         '{era}': getYrSuffix(yr),

@@ -49,8 +49,8 @@ class _CircularTitleBar extends StatelessWidget {
                     .animate(key: ValueKey(index))
                     .fade()
                     .scale(
-                        begin: .5,
-                        end: 1,
+                        // begin: .5,
+                        // end: 1,
                         curve: Curves.easeOutBack,
                         duration: $styles.times.med),
               ),

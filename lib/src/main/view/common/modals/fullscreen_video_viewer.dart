@@ -4,7 +4,9 @@ import 'package:wonders/src/controller.dart' show appLogic;
 import 'package:wonders/src/view.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
+///
 class FullscreenVideoPage extends StatefulWidget {
+  ///
   const FullscreenVideoPage({Key? key, required this.id}) : super(key: key);
   final String id;
 
@@ -16,7 +18,9 @@ class _FullscreenVideoPageState extends State<FullscreenVideoPage> {
   late final _controller = YoutubePlayerController(
     initialVideoId: widget.id,
     params: const YoutubePlayerParams(
-        autoPlay: true, startAt: Duration(seconds: 1)),
+      autoPlay: true,
+      startAt: Duration(seconds: 1),
+    ),
   )..play();
 
   @override

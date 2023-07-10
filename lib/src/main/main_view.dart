@@ -1,6 +1,6 @@
 // common utility interface elements
 //
-export 'package:collection/collection.dart';
+export 'package:collection/collection.dart' hide binarySearch, mergeSort;
 //
 export 'package:extra_alignments/extra_alignments.dart';
 //

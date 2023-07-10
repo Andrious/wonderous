@@ -34,6 +34,7 @@ class WondersApp extends AppStatefulWidget {
         routerDelegate: appRouter.routerDelegate,
         routeInformationProvider: appRouter.routeInformationProvider,
         routeInformationParser: appRouter.routeInformationParser,
+        builder: (_, child) => WondersAppScaffold(child: child!),
         theme: ThemeData(fontFamily: $styles.text.body.fontFamily),
         localizationsDelegates: const [
           AppLocalizations.delegate,

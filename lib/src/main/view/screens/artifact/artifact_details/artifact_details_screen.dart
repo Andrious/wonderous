@@ -9,7 +9,7 @@
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_header.dart';
 part 'widgets/_content.dart';
@@ -55,7 +55,8 @@ class _ArtifactDetailsScreenState extends State<ArtifactDetailsScreen> {
                 SizedBox(
                   width: $styles.insets.xxl * 3,
                   child: Text(
-                    StringUtils.supplant($strings.artifactDetailsErrorNotFound,
+                    StringUtils.supplant(
+                        $strings.artifactDetailsErrorNotFound('{artifactId}'),
                         {'{artifactId}': widget.artifactId}),
                     style: $styles.text.body
                         .copyWith(color: $styles.colors.offWhite),

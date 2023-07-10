@@ -16,7 +16,7 @@ import 'package:flutter/rendering.dart';
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part '_vertical_swipe_controller.dart';
 part 'widgets/_animated_arrow_button.dart';

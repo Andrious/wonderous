@@ -38,7 +38,8 @@ class WonderTitleText extends StatelessWidget {
       final bool addLinebreak = i == 0 && pieces.length > 1;
       final bool addSpace = !addLinebreak && i < pieces.length - 1;
       if (useSmallText == false) {
-        text = StringUtils.capitalize(text);
+//        text = StringUtils.capitalize(text);
+        text = text.capitalize!;
       }
       return TextSpan(
         text: '$text${addLinebreak ? '\n' : addSpace ? ' ' : ''}',

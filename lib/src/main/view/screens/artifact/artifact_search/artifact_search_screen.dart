@@ -11,7 +11,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_result_tile.dart';
 part 'widgets/_results_grid.dart';
@@ -162,7 +162,7 @@ class _ArtifactSearchScreenState extends State<ArtifactSearchScreen>
           Gap($styles.insets.sm),
           Text(
             StringUtils.supplant(
-              $strings.artifactsSearchLabelFound,
+              $strings.artifactsSearchLabelFound('{numFound}', '{numResults}'),
               {
                 '{numFound}': _searchResults.length.toString(),
                 '{numResults}': _filteredResults.length.toString(),

@@ -25,7 +25,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_app_bar.dart';
 part 'widgets/_callout.dart';

@@ -20,7 +20,7 @@ class TimelineSection extends StatelessWidget {
 
     return Semantics(
       label:
-          '${data.title}, ${StringUtils.supplant($strings.timelineSemanticDate, {
+          '${data.title}, ${StringUtils.supplant($strings.timelineSemanticDate('{fromDate}', '{endDate}'), {
             '{fromDate}': StringUtils.formatYr(data.startYr),
             '{endDate}': StringUtils.formatYr(data.endYr)
           })}',

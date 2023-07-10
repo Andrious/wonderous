@@ -6,7 +6,7 @@ export 'package:flutter/material.dart' hide runApp;
 
 /// framework
 export 'package:fluttery_framework/view.dart'
-    hide ContextExtension, GetNumUtils;
+    hide ContextExtension, GetNumUtils, GoRouterExtension;
 // get_it
 export 'package:get_it/get_it.dart';
 // get_it_mixin

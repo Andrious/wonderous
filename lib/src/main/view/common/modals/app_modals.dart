@@ -1,13 +1,15 @@
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+//import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 // import 'package:wonders/common_libs.dart';
 // import 'package:wonders/ui/common/themed_text.dart';
 
 import 'package:wonders/src/controller.dart' show $strings;
 import 'package:wonders/src/view.dart';
 
+///
 Future<bool?> showModal(BuildContext context, {required Widget child}) async {
-  return await showMaterialModalBottomSheet(
-        expand: false,
+  return await showModalBottomSheet<bool>(
+        //)await showMaterialModalBottomSheet<bool>(
+//        expand: false,
         context: context,
         backgroundColor: $styles.colors.greyStrong,
         builder: (_) => child,
@@ -15,7 +17,9 @@ Future<bool?> showModal(BuildContext context, {required Widget child}) async {
       false;
 }
 
+///
 class LoadingModal extends StatelessWidget {
+  ///
   const LoadingModal({Key? key, this.title, this.msg, this.child})
       : super(key: key);
   final String? title;

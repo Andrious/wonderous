@@ -24,7 +24,7 @@ class _AnimatedArrowButton extends StatelessWidget {
     final Duration duration = $styles.times.med;
     return AppBtn.basic(
       semanticLabel: StringUtils.supplant(
-        $strings.animatedArrowSemanticSwipe,
+        $strings.animatedArrowSemanticSwipe('{title}'),
         {'{title}': semanticTitle},
       ),
       onPressed: onTap,

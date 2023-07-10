@@ -107,7 +107,7 @@ class _TopContent extends StatelessWidget {
       children: [
         Text(
           StringUtils.supplant(
-            $strings.titleLabelDate,
+            $strings.titleLabelDate('{fromDate}', '{endDate}'),
             {
               '{fromDate}': StringUtils.formatYr(data.startYr),
               '{endDate}': StringUtils.formatYr(data.endYr),

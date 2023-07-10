@@ -15,7 +15,7 @@ import 'package:wonders/src/controller.dart'
     show $strings, StringUtils, collectiblesLogic, unsplashLogic;
 import 'package:wonders/src/model.dart'
     show UnsplashPhotoData, UnsplashPhotoSize, WonderType;
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_animated_cutout_overlay.dart';
 
@@ -241,15 +241,20 @@ class _PhotoGalleryState extends State<PhotoGallery> {
             semanticLbl = $strings.collectibleItemSemanticCollectible;
           } else {
             semanticLbl = !selected
-                ? StringUtils.supplant($strings.photoGallerySemanticFocus, {
-                    '{photoIndex}': (index + 1).toString(),
-                    '{photoTotal}': _imgCount.toString(),
-                  })
+                ? StringUtils.supplant(
+                    $strings.photoGallerySemanticFocus(
+                        '{photoIndex}', '{photoTotal}'),
+                    {
+                        '{photoIndex}': (index + 1).toString(),
+                        '{photoTotal}': _imgCount.toString(),
+                      })
                 : StringUtils.supplant(
-                    $strings.photoGallerySemanticFullscreen, {
-                    '{photoIndex}': (index + 1).toString(),
-                    '{photoTotal}': _imgCount.toString(),
-                  });
+                    $strings.photoGallerySemanticFullscreen(
+                        '{photoIndex}', '{photoTotal}'),
+                    {
+                        '{photoIndex}': (index + 1).toString(),
+                        '{photoTotal}': _imgCount.toString(),
+                      });
           }
           return MergeSemantics(
             child: Semantics(

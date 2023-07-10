@@ -13,7 +13,7 @@
 
 import 'package:wonders/src/controller.dart';
 import 'package:wonders/src/model.dart';
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
 part 'widgets/_events_list.dart';
 part 'widgets/_top_content.dart';

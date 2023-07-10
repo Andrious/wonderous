@@ -3,11 +3,12 @@
 
 import 'package:wonders/src/controller.dart';
 
-import 'package:wonders/src/view.dart';
+import 'package:wonders/src/view.dart' hide StringUtils;
 
+///
 class TimelineEventCard extends StatelessWidget {
-  const TimelineEventCard({Key? key, required this.year, required this.text})
-      : super(key: key);
+  ///
+  const TimelineEventCard({super.key, required this.year, required this.text});
   final int year;
   final String text;
 

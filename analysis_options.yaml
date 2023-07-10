@@ -80,7 +80,7 @@ linter:
     # - flutter_style_todos # don't need those for now
     - hash_and_equals
     - implementation_imports
-    - invariant_booleans
+    #- invariant_booleans # No longer to be used.
     - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings

@@ -158,12 +158,12 @@ In truth, I should have inserted the underscore anyway — making it a consisten
 </div>
 <br/>
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_controller.dart"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*9UxUeHB21oP3g4IrWIp86A.png" width="50%" height="60%"></a>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_model.dart"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*V3hRebS1EWpvt2QBXWRj7w.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_controller.dart"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*9UxUeHB21oP3g4IrWIp86A.png" width="48%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_model.dart"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*V3hRebS1EWpvt2QBXWRj7w.png" width="48%" height="60%"></a>
 </div>
 <br/>
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_view.dart"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*7C-nUW7_kD131-BQVKW_yw.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_view.dart"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*7C-nUW7_kD131-BQVKW_yw.png" width="48%" height="60%"></a>
 </div>
 
 By the way, this little exercise of rearranging the files and folders was all done rather quickly 
@@ -190,16 +190,16 @@ every class that’s concerned with the app’s interface. Very clean and concis
 
 `import 'package:wonderous/src/view.dart';`
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/app.dart#L1"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*jG5ZJmjICvc7AN_GOEwOVw.png" width="50%" height="60%"></a>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/app.dart#L25"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*pXlbaI2_CnIDHdALBhOJrA.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/app.dart#L1"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*jG5ZJmjICvc7AN_GOEwOVw.png" width="48%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/app.dart#L25"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*pXlbaI2_CnIDHdALBhOJrA.png" width="48%" height="60%"></a>
 </div>
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/router.dart#L41"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*o8epb6pz-Hl8uSINLkAY0Q.png" width="50%" height="60%"></a>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/view.dart#L1"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*82GBRAuqbn8BTlIK-5g3VA.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/view/router.dart#L41"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*o8epb6pz-Hl8uSINLkAY0Q.png" width="48%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/view.dart#L1"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*82GBRAuqbn8BTlIK-5g3VA.png" width="48%" height="60%"></a>
 </div>
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_view.dart#L6"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Dv_1_RxdaQvDArq76A2_-Q.png" width="50%" height="60%"></a>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/view/screens/screens.dart#L13"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OT9rhLN4U7Ee6dwgPkADgQ.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/main_view.dart#L6"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Dv_1_RxdaQvDArq76A2_-Q.png" width="48%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/view/screens/screens.dart#L13"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*OT9rhLN4U7Ee6dwgPkADgQ.png" width="48%" height="60%"></a>
 </div>
 
 With that, most of your source code will have only three import statements:
@@ -233,11 +233,11 @@ I felt a better approach would be to define each such getter in the same file as
 they reference also resides. Again, a more modular approach. 
 See the alternative approach in the next two screenshots below.
 <div>
-    <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/a3df02252d9575fb272f596a90afd766043d8e5e/lib/main.dart#L67"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*AEdFWi6Y6B4reISerklEzQ.png" width="50%" height="60%"></a>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/controller/app_logic.dart#L17"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*8zc2HPoDmb7AkWc01mqT-Q.png" width="50%" height="60%"></a>
+    <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/a3df02252d9575fb272f596a90afd766043d8e5e/lib/main.dart#L67"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*AEdFWi6Y6B4reISerklEzQ.png" width="48%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/app/controller/app_logic.dart#L17"><img align="right" src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*8zc2HPoDmb7AkWc01mqT-Q.png" width="48%" height="60%"></a>
 </div>
 <div>
-    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/controller/wonders_logic.dart#L26"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*AUNNQpmxO_IrrZhPZnxfHg.png" width="50%" height="60%"></a>
+    <a href="https://github.com/Andrious/wonderous/blob/7a6184e06b1525b1d2f956ad9c200e97d0fdd2b8/lib/src/main/controller/wonders_logic.dart#L26"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*AUNNQpmxO_IrrZhPZnxfHg.png" width="48%" height="60%"></a>
 </div>
 
 TL;DR
@@ -318,8 +318,8 @@ and calls the StatelessWidget’s **build**() function (rebuilding that widget a
 Locale is changed. See the first screenshot below.
 
 <div>
-  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UPjq9R__7TEpYwsSgyAgrw.png" width="50%" height="60%"></a>
-  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tgFc-tjJzBsB3dPi8EpJUw.png" width="50%" height="60%"></a>
+  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UPjq9R__7TEpYwsSgyAgrw.png" width="48%" height="60%"></a>
+  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tgFc-tjJzBsB3dPi8EpJUw.png" width="48%" height="60%"></a>
 </div>
 
 When you tap on that tab, the function, **handleSwapLocale**(), is called (see second screenshot above) 
@@ -344,8 +344,8 @@ In the first screenshot below, the StatelessWidget is now a StatefulWidget in my
 It uses the class, _StateX_, that comes from the Fluttery Framework to ‘extend’ Flutter’s original State class — hence the ‘X.’
 
 <div>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L8"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-sttqKewJU8aFsXZSq23ag.png" width="50%" height="60%"></a>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*4kemL9Dp9dY6xVjJYcyJmg.png" width="50%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L8"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-sttqKewJU8aFsXZSq23ag.png" width="48%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*4kemL9Dp9dY6xVjJYcyJmg.png" width="48%" height="60%"></a>
 </div>
 
 Where’s My Soc?
@@ -358,8 +358,8 @@ That controller is then retrieved in that class’s own constructor and assigned
 This allows the function, **onPressed**(), found in that controller to be called whenever that tab is tapped on.
 
 <div>
-  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*i9M4HPIdqp5nPC_3phHSYg.png" width="50%" height="60%"></a>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*45n4MaInytrgt5e0WkDtyA.png" width="50%" height="60%"></a>
+  <a href="https://github.com/gskinnerTeam/flutter-wonderous-app/blob/181a0783fd777428922646d312fbe41571e455df/lib/ui/common/controls/locale_switcher.dart#L2"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*i9M4HPIdqp5nPC_3phHSYg.png" width="48%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*45n4MaInytrgt5e0WkDtyA.png" width="48%" height="60%"></a>
 </div>
 
 Do you see the differences between the two screenshots above? 
@@ -407,8 +407,8 @@ This allows the logic to be readily adaptive and change, for example, the operat
 Powerful stuff.
 
 <div>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L10"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*cLtDTVNXzZXXcT3wo_pbEA.png" width="50%" height="60%"></a>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L98"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zndFcW7fAVu5LR5etDDpGg.png" width="50%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L10"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*cLtDTVNXzZXXcT3wo_pbEA.png" width="48%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L98"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zndFcW7fAVu5LR5etDDpGg.png" width="48%" height="60%"></a>
 </div>
 
 The Single Factor
@@ -424,8 +424,8 @@ That variable is then referenced throughout the remaining functions in that clas
 By the way, placing such a reference in resident memory allows for a little more optimized performance as well.
 
 <div>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L33"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fx-8gqFBWW1_gsuKTwR-8Q.png" width="50%" height="60%"></a>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-z0IqXZRk7mIE9b9Cb1rEQ.png" width="50%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L33"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*fx-8gqFBWW1_gsuKTwR-8Q.png" width="48%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L32"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-z0IqXZRk7mIE9b9Cb1rEQ.png" width="48%" height="60%"></a>
 </div>
 
 Note, in the second screenshot above, the controller is seemingly instantiated every time the tab button is tapped. 
@@ -438,8 +438,8 @@ Control The State Of Events
 Passing a StateXController object to a State object’s super constructor (first screenshot below) gives the controller access to all the functions and features in that State object. 
 Now, anything a State object can do, the controller can do as well. Very nice.
 <div>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L8"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*p7SowPp37v4uNu54jDudQg.png" width="50%" height="60%"></a>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L98"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*B3ZuiqPTLQuOuaVVYZ8SiA.png" width="50%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/view/common/controls/locale_switcher.dart#L8"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*p7SowPp37v4uNu54jDudQg.png" width="48%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L98"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*B3ZuiqPTLQuOuaVVYZ8SiA.png" width="48%" height="60%"></a>
 </div>
 
 Thus, when your controller is ‘registered’ with a State object and its State object’s **initState**() function is called, its own **initState**() function will also be called. 
@@ -449,15 +449,15 @@ In the screenshot below, the controller, SettingsLogic, has two ‘State event�
 Both are fired by the State object, _\_LocalSwitcherState_ .
 
 <div>
-  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L20"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BT23nhgbPBomEMHrIjao8Q.png" width="50%" height="60%"></a>
+  <a href="https://github.com/Andrious/wonderous/blob/04f4254ba05fe466b8db006ccd7065f70a81db36/lib/src/main/controller/settings_logic.dart#L20"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*BT23nhgbPBomEMHrIjao8Q.png" width="48%" height="60%"></a>
 </div>
 
 The StateX class object’s corresponding **initState**() and **dispose**() functions will call in turn any and all controllers 
 (yes, there can be more than one) that were ‘added’ to them at any one time. See the screenshot below.
 
 <div>
-  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L202"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*KN-jFhg6u0bGbVrJsXkZog.png" width="50%" height="60%"></a>
-  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L308"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*L44gbyAQX3OXxhTZjSZfHw.png" width="50%" height="60%"></a>
+  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L202"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*KN-jFhg6u0bGbVrJsXkZog.png" width="48%" height="60%"></a>
+  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L308"><img align="right" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*L44gbyAQX3OXxhTZjSZfHw.png" width="48%" height="60%"></a>
 </div>
 
 Get A Handle On It
@@ -472,7 +472,7 @@ That’s because it’s [added as an observer](https://github.com/AndriousSoluti
 
 The screenshot below is a summary of those event functions. Imagine the possibilities in your own flutter apps:
 <div>
-  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L1296"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JHC6hO-SZiG0M_aH92H7kg.png" width="50%" height="60%"></a>
+  <a href="https://github.com/AndriousSolutions/state_extended/blob/bb4e726ae1e679fe8825ac59f7d34667cd6181a3/lib/state_extended.dart#L1296"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JHC6hO-SZiG0M_aH92H7kg.png" width="48%" height="60%"></a>
 </div>
 
 

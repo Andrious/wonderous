@@ -1,6 +1,7 @@
 
-## 2.5.0
+## 2.5.0+1
 - Flutter upgrade
+- Update README.md file
 
 ## 2.4.0
 - A little more formatting
